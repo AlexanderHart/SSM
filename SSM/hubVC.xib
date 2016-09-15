@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="hubViewController" customModule="SSM" customModuleProvider="target">
+            <connections>
+                <outlet property="scrollView" destination="cKW-Wm-b6b" id="KxB-6o-M0D"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKW-Wm-b6b">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cKW-Wm-b6b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3kC-Zx-GIQ"/>
+                <constraint firstItem="cKW-Wm-b6b" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="S3E-Aw-XRK"/>
+                <constraint firstAttribute="bottom" secondItem="cKW-Wm-b6b" secondAttribute="bottom" id="i6u-tH-KeR"/>
+                <constraint firstAttribute="trailing" secondItem="cKW-Wm-b6b" secondAttribute="trailing" id="xav-vf-1d7"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

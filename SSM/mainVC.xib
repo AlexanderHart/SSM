@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="mainVC" customModule="SSM" customModuleProvider="target">
+            <connections>
+                <outlet property="meetAmountLabel" destination="Zys-Ku-goQ" id="pbc-qT-bZf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewMap" destination="IiD-hB-3bf" id="XRv-kg-Szl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="middleBG" translatesAutoresizingMaskIntoConstraints="NO" id="FzJ-bG-oBY">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SSM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLi-ZQ-Ixf">
+                    <rect key="frame" x="253" y="28" width="94" height="37"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="39"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IiD-hB-3bf" customClass="GMSMapView">
+                    <rect key="frame" x="0.0" y="103" width="600" height="497"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zys-Ku-goQ" userLabel="meetAmount">
+                    <rect key="frame" x="279" y="74" width="42" height="21"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.80000000000000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Zys-Ku-goQ" firstAttribute="top" secondItem="BLi-ZQ-Ixf" secondAttribute="bottom" constant="4" id="8Zo-DF-npX"/>
+                <constraint firstItem="IiD-hB-3bf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="11" id="9ij-zB-Ihu"/>
+                <constraint firstAttribute="trailing" secondItem="FzJ-bG-oBY" secondAttribute="trailing" id="CZE-bX-PCX"/>
+                <constraint firstAttribute="bottom" secondItem="FzJ-bG-oBY" secondAttribute="bottom" id="Yw4-dT-jlp"/>
+                <constraint firstItem="FzJ-bG-oBY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="axJ-nw-P06"/>
+                <constraint firstItem="FzJ-bG-oBY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="h6w-Mr-dov"/>
+                <constraint firstAttribute="trailing" secondItem="IiD-hB-3bf" secondAttribute="trailing" constant="11" id="oq0-Yv-iQa"/>
+                <constraint firstItem="BLi-ZQ-Ixf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="28" id="ptm-uF-Fc9"/>
+                <constraint firstItem="Zys-Ku-goQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qOr-JS-ORO"/>
+                <constraint firstAttribute="bottom" secondItem="IiD-hB-3bf" secondAttribute="bottom" constant="11" id="tqr-zi-fy8"/>
+                <constraint firstItem="BLi-ZQ-Ixf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vvw-Qk-Lbg"/>
+                <constraint firstItem="IiD-hB-3bf" firstAttribute="top" secondItem="BLi-ZQ-Ixf" secondAttribute="bottom" constant="38" id="xTj-5t-0r7"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="middleBG" width="640" height="1136"/>
+    </resources>
+</document>

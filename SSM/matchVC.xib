@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="matchVC" customModule="SSM" customModuleProvider="target">
+            <connections>
+                <outlet property="meetButtonImg" destination="atq-6B-OZS" id="nWZ-Pl-D4R"/>
+                <outlet property="skipButtonImg" destination="gJy-bJ-exQ" id="ZCa-4s-XSU"/>
+                <outlet property="subLabel" destination="3bR-rh-GHJ" id="V1q-01-gAc"/>
+                <outlet property="userOnePic" destination="ahH-zI-LOl" id="xSn-nN-Qdc"/>
+                <outlet property="userTwoPic" destination="rgu-5h-Avs" id="5sq-lm-8DJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightBGBlack" translatesAutoresizingMaskIntoConstraints="NO" id="6bW-tJ-7DH">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MPJ-Jx-gRg" userLabel="meetAnimated" customClass="CSAnimationView">
+                    <rect key="frame" x="175" y="389" width="250" height="55"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="meetButton" translatesAutoresizingMaskIntoConstraints="NO" id="atq-6B-OZS">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="55"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.80784313730000001" green="0.1843137255" blue="0.23529411759999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="S8C-Vg-FML"/>
+                        <constraint firstAttribute="height" constant="55" id="eeM-bA-wOF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="morph"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGn-Fg-siN" userLabel="skipAnimated" customClass="CSAnimationView">
+                    <rect key="frame" x="175" y="452" width="250" height="55"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="skipButton" translatesAutoresizingMaskIntoConstraints="NO" id="gJy-bJ-exQ">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="55"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="NC5-N9-tXT"/>
+                        <constraint firstAttribute="width" constant="250" id="lNs-tK-ZtO"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="morph"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N92-XO-4np" userLabel="titleAnimated" customClass="CSAnimationView">
+                    <rect key="frame" x="167" y="107" width="240" height="128"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="HRS-SR-GAG">
+                            <rect key="frame" x="0.0" y="0.0" width="261" height="64"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="261" id="a59-3I-x2I"/>
+                        <constraint firstAttribute="height" constant="64" id="h7n-0I-jqj"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="morph"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mmv-ao-eaV" userLabel="subAnimated" customClass="CSAnimationView">
+                    <rect key="frame" x="167" y="243" width="240" height="128"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bR-rh-GHJ">
+                            <rect key="frame" x="0.0" y="0.0" width="261" height="64"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="261" id="h6V-D2-rQg"/>
+                        <constraint firstAttribute="height" constant="64" id="xcl-kT-b8o"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="morph"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sk3-3c-PZh" userLabel="userOneAnimated" customClass="CSAnimationView">
+                    <rect key="frame" x="-44" y="379" width="240" height="128"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ahH-zI-LOl">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Txm-w9-yNX"/>
+                        <constraint firstAttribute="height" constant="100" id="hP4-rB-qPR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="morph"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vvJ-zK-hpr" userLabel="userTwoAnimated" customClass="CSAnimationView">
+                    <rect key="frame" x="204" y="379" width="240" height="128"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="userOnePic" translatesAutoresizingMaskIntoConstraints="NO" id="rgu-5h-Avs">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="LRU-hz-88I"/>
+                        <constraint firstAttribute="height" constant="100" id="RF3-vP-9qh"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="morph"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058819999999" green="0.32549019610000002" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="nGn-Fg-siN" firstAttribute="top" secondItem="MPJ-Jx-gRg" secondAttribute="bottom" constant="8" id="2xh-Hr-haZ"/>
+                <constraint firstItem="N92-XO-4np" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="55" id="3LL-oU-bD6"/>
+                <constraint firstItem="MPJ-Jx-gRg" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="116" id="8vV-6w-jUF"/>
+                <constraint firstItem="mmv-ao-eaV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ADo-K6-Vjm"/>
+                <constraint firstItem="vvJ-zK-hpr" firstAttribute="top" secondItem="mmv-ao-eaV" secondAttribute="bottom" constant="8" id="Fja-hX-oFR"/>
+                <constraint firstAttribute="trailing" secondItem="6bW-tJ-7DH" secondAttribute="trailing" id="GrP-a2-x4N"/>
+                <constraint firstItem="sk3-3c-PZh" firstAttribute="top" secondItem="mmv-ao-eaV" secondAttribute="bottom" constant="8" id="Jzp-O7-a1k"/>
+                <constraint firstItem="MPJ-Jx-gRg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="N1A-j9-FQP"/>
+                <constraint firstItem="N92-XO-4np" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QNP-kk-aNc"/>
+                <constraint firstItem="nGn-Fg-siN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Vj1-8p-yRh"/>
+                <constraint firstItem="sk3-3c-PZh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="35" id="bwj-dP-Jd9"/>
+                <constraint firstAttribute="bottom" secondItem="6bW-tJ-7DH" secondAttribute="bottom" id="cf9-bW-b44"/>
+                <constraint firstItem="6bW-tJ-7DH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dgA-7w-jfQ"/>
+                <constraint firstItem="mmv-ao-eaV" firstAttribute="top" secondItem="N92-XO-4np" secondAttribute="bottom" constant="-9" id="iMd-qC-HNP"/>
+                <constraint firstAttribute="trailing" secondItem="vvJ-zK-hpr" secondAttribute="trailing" constant="50" id="iyB-EL-DN6"/>
+                <constraint firstItem="6bW-tJ-7DH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tmI-Lu-bSB"/>
+            </constraints>
+            <point key="canvasLocation" x="496" y="249"/>
+        </view>
+        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bn1-TT-vo3">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+        </imageView>
+    </objects>
+    <resources>
+        <image name="meetButton" width="239" height="46"/>
+        <image name="rightBGBlack" width="640" height="1136"/>
+        <image name="skipButton" width="478" height="92"/>
+        <image name="title" width="526" height="129"/>
+        <image name="userOnePic" width="35" height="35"/>
+    </resources>
+</document>
